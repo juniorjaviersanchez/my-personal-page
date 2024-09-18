@@ -1,6 +1,6 @@
 <template>
     
-    <v-toolbar :elevation="8" :color="colorGenral" class="add-fixed" >
+    <v-toolbar :elevation="3" :color="colorGenralNav" class="add-fixed custom-toolbar" >
         <v-app-bar-nav-icon
             @click.stop="drawer = !drawer" />
         
@@ -62,7 +62,8 @@ export default {
     data() {
             return {
                 drawer: null,
-                colorGenral: 'white'
+                colorGenral: 'indigo-lighten-4',
+                colorGenralNav: 'white'
             }
     }
 }
@@ -79,4 +80,9 @@ export default {
         position: sticky !important;
         z-index: 1;
     }
+
+    .custom-toolbar {
+        box-shadow: 0px 0px 15px rgb(98 46 195) !important;
+    }
+      
 </style>

@@ -106,7 +106,7 @@ export default {
           title: 'Piedra, papel o tijera',
           description: 'Este proyecto utiliza Vue.js para construir la interfaz de usuario, Vuetify para los componentes estilizados. Es un juego interactivo de Piedra, Papel o Tijera, donde los usuarios pueden competir contra la computadora.',
           image: require("@/assets/img/portfolio/rock-scissors-paper.webp"),
-          url: 'https://javier-project-n2.netlify.app/',
+          url: 'https://javier-project-n3.netlify.app/',
           tags: ['Vue', 'Vuetify', '2024'],
         },
         {
