@@ -133,6 +133,14 @@ export default {
           iconPage: 'mdi-lock'
         },
         {
+          title: 'Mibus',
+          description: 'Este proyecto es un sistema de seguimiento de flotas GPS que utiliza Laravel como framework backend y Blade para la creación de las vistas. La interfaz de usuario se diseñó con Tailwind CSS, ofreciendo un diseño limpio y responsivo. El sistema permite monitorear en tiempo real la ubicación de vehículos, gestionar datos de eventos GPS y ofrecer herramientas de administración eficientes para la flota.',
+          image: require("@/assets/img/portfolio/project-mibus.webp"),
+          url: '',
+          tags: ['Tailwind', 'Blade', 'Laravel', '2023'],
+          iconPage: 'mdi-lock'
+        },
+        {
           title: 'Ceconp',
           description: 'Una página informativa de abogados.',
           image: require("@/assets/img/portfolio/porject_ceconp.webp"),
