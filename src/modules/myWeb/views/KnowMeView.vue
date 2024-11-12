@@ -30,6 +30,54 @@
                 v-bind="props"
                 variant="flat"
               >
+                <v-card-title class="mb-5">
+                  <p class="text-subtitle-1 font-weight-black">
+                    Sobre mí
+                  </p>
+                  <v-sheet
+                    tile
+                    height="4"
+                    :width="isHovering ? 70 : 40"
+                    color="primary"
+                  ></v-sheet>
+                </v-card-title>
+    
+                <v-card-text class="text-justify">
+                  ¡Hola! Soy Javier Sánchez, desarrollador web apasionado por la programación y la creación de soluciones innovadoras. Disfruto enseñando, compartiendo conocimientos y explorando el mundo de las tecnologías digitales.
+                </v-card-text>
+                <v-card-text class="text-justify">
+                  A lo largo de mi carrera, he tenido la oportunidad de trabajar en distintos proyectos y empresas en Colombia y Perú:
+                  <ul class="ml-1 mt-2" style="list-style-type: none;">
+                    <li><v-chip>📍 COLOMBIA</v-chip> Actualmente, desempeño el cargo de MD. FULLSTACK DEVELOPER en SUPLOS, donde he desarrollado varios módulos, incluyendo:</li>
+                    <li>
+                      <ul class="ml-10">
+                        <li>Módulos: Proveedores, Ofertas y Solfin.</li>
+                        <li>Funciones: Desarrollo de migraciones, factories, seeders, modelos, controladores y endpoints; creación de tests y pruebas unitarias con phpUnit; asignación de roles y permisos; creación de scripts de sincronización y tareas programadas (crons) en Linux; automatización de correos; pruebas de API con POSTMAN; generación de reportes en Excel y PDF con filtros; gestión de subida de archivos con AWS; implementación de la metodología Araru; y desarrollo de API RUES.</li>
+                      </ul>
+                    </li>
+                    <li class="mt-5"><v-chip>📍 Perú</v-chip></li>
+                    <li>
+                      <ul class="ml-10">
+                        <li>En Satélite Perú, desarrollé software para la administración de soluciones de localización y monitoreo integral de vehículos, flotas, activos y personas. También trabajé como desarrollador en DEVC Tecnologías, la Municipalidad de Chiclayo, e Hidronorte SRL. Además, colaboré en el CPIS de la Universidad Nacional Pedro Ruiz Gallo y en el área de soporte técnico de Tecnologías de la Información en el Hospital Regional de Lambayeque.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </v-card-text>
+                <v-card-text class="text-justify">
+                  Me motiva estar al día con las nuevas tecnologías y ayudar a los demás a aprovechar al máximo el poder de internet.
+                </v-card-text>
+
+              </v-card>
+            </v-hover>
+          </v-col>
+          
+          <v-col cols="12" sm="12" md="6" class=" mb-4">
+            <v-hover v-slot="{ isHovering, props }">
+              <v-card
+                class="ma-2"
+                v-bind="props"
+                variant="flat"
+              >
                 <v-card-title>
                   <v-row>
                     <v-col cols="12" sm="12" md="7">
@@ -147,44 +195,7 @@
             </v-hover>
           </v-col>
 
-          <v-col cols="12" sm="12" md="6" class=" mb-4">
-            <v-hover v-slot="{ isHovering, props }">
-              <v-card
-                class="ma-2"
-                v-bind="props"
-                variant="flat"
-              >
-                <v-card-title class="mb-5">
-                  <p class="text-subtitle-1 font-weight-black">
-                    Sobre mi
-                  </p>
-                  <v-sheet
-                    tile
-                    height="4"
-                    :width="isHovering ? 70 : 40"
-                    color="primary"
-                  ></v-sheet>
-                </v-card-title>
-    
-                <v-card-text>
-                  Hola, soy Javier Sánchez desarrollador Web, me encanta programar, crear cosas, enseñar a los demás y todo lo relacionado con Internet y las nuevas tecnologías.
-                </v-card-text>
-                <v-card-text>
-                  Tengo experiencia en diferentes campos como Desarrollador de software en SUPLOS(Colombia), Satélite Perú, la municipalidad de Chiclayo, en Hidronorte SRL y otras empresas. También en soporte técnico en el área de Tecnología de Información del Hospital regional de Lambayeque, en la Universidad Nacional Pedro Ruiz Gallo.
-                </v-card-text>
-
-                <v-card-text>
-                  <v-icon icon="mdi-vuetify"></v-icon>
-                  Ingeniero de Sistemas
-                </v-card-text>
-                <v-card-text>
-                  <v-icon icon="mdi-vuetify"></v-icon>
-                  Hablo el idioma español e inglés(Técnico)
-                </v-card-text>
-
-              </v-card>
-            </v-hover>
-          </v-col>
+          
   
         </v-row>
       </v-card>

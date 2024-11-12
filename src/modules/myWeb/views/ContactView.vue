@@ -127,7 +127,6 @@
                 </v-card>
               </v-hover>
             </v-col>
-  
             <v-col cols="12" sm="12" md="6" class=" mb-4">
               <v-hover v-slot="{ isHovering, props }">
                 <v-card
@@ -137,7 +136,7 @@
                 >
                   <v-card-title class="mb-5">
                     <p class="text-subtitle-1 font-weight-black">
-                      Estemos en contacto
+                      Redes sociales
                     </p>
                     <v-sheet
                       tile
@@ -148,10 +147,21 @@
                   </v-card-title>
       
                   <v-card-text>
-                    Soy un desarrollador de software con cuatro años de experiencia en aplicaciones web. Busco colaborar en una posición como programador donde pueda demostrar mis habilidades
+                    Sígueme para estar al tanto de todas las novedades, consejos y mucho más✨.
                   </v-card-text>
 
                   <div class="text-center">
+                      <v-card
+                        class="pa-2 rounded-circle d-inline-block my-4 mx-1"
+                        href="https://wa.link/3qy8q1"
+                        target="_blank"
+                        bg-color="red-lighten-1"
+                        transition="scroll-x-transition"
+                        color="primary"
+                        variant="outlined"
+                        elevation="5">
+                        <v-icon  icon="mdi-whatsapp"></v-icon>
+                      </v-card>
                       <v-card
                         class="pa-2 rounded-circle d-inline-block my-4 mx-1"
                         href="https://pe.linkedin.com/in/junior-javier-s%C3%A1nchez-1556521a3?trk=people-guest_people_search-card"
@@ -191,7 +201,6 @@
                 </v-card>
               </v-hover>
             </v-col>
-    
           </v-row>
         </v-card>
   
