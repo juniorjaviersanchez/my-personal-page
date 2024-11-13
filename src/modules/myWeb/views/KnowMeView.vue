@@ -48,17 +48,17 @@
                 <v-card-text class="text-justify">
                   A lo largo de mi carrera, he tenido la oportunidad de trabajar en distintos proyectos y empresas en Colombia y Perú:
                   <ul class="ml-1 mt-2" style="list-style-type: none;">
-                    <li><v-chip>📍 COLOMBIA</v-chip> Actualmente, desempeño el cargo de MD. FULLSTACK DEVELOPER en SUPLOS, donde he desarrollado varios módulos, incluyendo:</li>
+                    <li><v-chip>📍 COLOMBIA</v-chip> <br> Actualmente, desempeño el cargo de MD. FULLSTACK DEVELOPER en SUPLOS, donde he desarrollado varios módulos, incluyendo:</li>
                     <li>
-                      <ul class="ml-10">
-                        <li>Módulos: Proveedores, Ofertas y Solfin.</li>
-                        <li>Funciones: Desarrollo de migraciones, factories, seeders, modelos, controladores y endpoints; creación de tests y pruebas unitarias con phpUnit; asignación de roles y permisos; creación de scripts de sincronización y tareas programadas (crons) en Linux; automatización de correos; pruebas de API con POSTMAN; generación de reportes en Excel y PDF con filtros; gestión de subida de archivos con AWS; implementación de la metodología Araru; y desarrollo de API RUES.</li>
+                      <ul class="ml-1" style="list-style-type: none;">
+                        <li class="mt-1"><v-icon icon="mdi-vuetify"></v-icon> Módulos: Proveedores, Ofertas y Solfin.</li>
+                        <li><v-icon icon="mdi-vuetify"></v-icon>Funciones: Desarrollo de migraciones, factories, seeders, modelos, controladores y endpoints; creación de tests y pruebas unitarias con phpUnit; asignación de roles y permisos; creación de scripts de sincronización y tareas programadas (crons) en Linux; automatización de correos; pruebas de API con POSTMAN; generación de reportes en Excel y PDF con filtros; gestión de subida de archivos con AWS; implementación de la metodología Araru; y desarrollo de API RUES.</li>
                       </ul>
                     </li>
                     <li class="mt-5"><v-chip>📍 Perú</v-chip></li>
                     <li>
-                      <ul class="ml-10">
-                        <li>En Satélite Perú, desarrollé software para la administración de soluciones de localización y monitoreo integral de vehículos, flotas, activos y personas. También trabajé como desarrollador en DEVC Tecnologías, la Municipalidad de Chiclayo, e Hidronorte SRL. Además, colaboré en el CPIS de la Universidad Nacional Pedro Ruiz Gallo y en el área de soporte técnico de Tecnologías de la Información en el Hospital Regional de Lambayeque.</li>
+                      <ul class="ml-1" style="list-style-type: none;">
+                        <li><v-icon icon="mdi-vuetify"></v-icon>En Satélite Perú, desarrollé software para la administración de soluciones de localización y monitoreo integral de vehículos, flotas, activos y personas. También trabajé como desarrollador en DEVC Tecnologías, la Municipalidad de Chiclayo, e Hidronorte SRL. Además, colaboré en el CPIS de la Universidad Nacional Pedro Ruiz Gallo y en el área de soporte técnico de Tecnologías de la Información en el Hospital Regional de Lambayeque.</li>
                       </ul>
                     </li>
                   </ul>
@@ -78,12 +78,81 @@
                 v-bind="props"
                 variant="flat"
               >
+                <v-card-text>
+                  <p class="text-subtitle-1 font-weight-black">
+                    Habilidades
+                  </p>
+                </v-card-text>
+
+                <v-card-text>
+                  <v-list-item>
+                    <p class="text-caption">
+                      FRONT-END [Html5, Css3, Javascript, Ajax, Tailwindcss,Vue, vuetify]
+                    </p>
+                    <template v-slot:append>
+                      <v-icon
+                        color="success"
+                        icon="mdi-check-circle"
+                        size="large"
+                      ></v-icon>
+                    </template>
+                  </v-list-item>
+                  <v-progress-linear
+                    model-value="100"
+                    color="light-blue"
+                    height="10"
+                    striped
+                  ></v-progress-linear>
+                </v-card-text>
+
+                <v-card-text>
+                  <v-list-item>
+                    <p class="text-caption">
+                      BACK-END [PHP, Laravel, Java, Spring boot]
+                    </p>
+                    <template v-slot:append>
+                      <v-icon
+                        color="success"
+                        icon="mdi-check-circle"
+                        size="large"
+                      ></v-icon>
+                    </template>
+                  </v-list-item>
+                  <v-progress-linear
+                    model-value="100"
+                    color="light-blue"
+                    height="10"
+                    striped
+                  ></v-progress-linear>
+                </v-card-text>
+
+                <v-card-text>
+                  <v-list-item>
+                    <p class="text-caption">
+                      Base de Datos [MySQL - PostgreSQL]
+                    </p>
+                    <template v-slot:append>
+                      <v-icon
+                        color="success"
+                        icon="mdi-check-circle"
+                        size="large"
+                      ></v-icon>
+                    </template>
+                  </v-list-item>
+                  <v-progress-linear
+                    model-value="100"
+                    color="light-blue"
+                    height="10"
+                    striped
+                  ></v-progress-linear>
+                </v-card-text>
+
                 <v-card-title>
                   <v-row>
                     <v-col cols="12" sm="12" md="7">
                       <v-card-text>
                         <div class="text-subtitle-1 font-weight-black ms-1 mb-2">
-                          JUNIOR JAVIER SANCHEZ
+                          Más Información
                         </div>
 
                         <v-timeline density="compact" align="start">
@@ -120,76 +189,6 @@
                     </v-col>
                   </v-row>
                 </v-card-title>
-    
-                <v-card-text>
-                  <p class="text-subtitle-1 font-weight-black">
-                    Habilidades
-                  </p>
-                </v-card-text>
-
-                <v-card-text>
-                  <v-list-item>
-                    <p class="text-caption">
-                      FRONT-END [Html5, Css3, Javascript, Ajax, Tailwindcss,Vue]
-                    </p>
-                    <template v-slot:append>
-                      <v-badge
-                        color="green"
-                        content="80%"
-                        inline
-                      ></v-badge>
-                    </template>
-                  </v-list-item>
-                  <v-progress-linear
-                    model-value="80"
-                    color="light-blue"
-                    height="10"
-                    striped
-                  ></v-progress-linear>
-                </v-card-text>
-
-                <v-card-text>
-                  <v-list-item>
-                    <p class="text-caption">
-                      BACK-END [PHP, Laravel, Java, Spring boot]
-                    </p>
-                    <template v-slot:append>
-                      <v-badge
-                        color="green"
-                        content="95%"
-                        inline
-                      ></v-badge>
-                    </template>
-                  </v-list-item>
-                  <v-progress-linear
-                    model-value="95"
-                    color="light-blue"
-                    height="10"
-                    striped
-                  ></v-progress-linear>
-                </v-card-text>
-
-                <v-card-text>
-                  <v-list-item>
-                    <p class="text-caption">
-                      Base de Datos [MySQL - PostgreSQL]
-                    </p>
-                    <template v-slot:append>
-                      <v-badge
-                        color="green"
-                        content="95%"
-                        inline
-                      ></v-badge>
-                    </template>
-                  </v-list-item>
-                  <v-progress-linear
-                    model-value="95"
-                    color="light-blue"
-                    height="10"
-                    striped
-                  ></v-progress-linear>
-                </v-card-text>
-
 
               </v-card>
             </v-hover>
@@ -212,13 +211,13 @@ export default {
       datos: [
         {
           icon: 'mdi-briefcase-account',
-          message: `Desarrollador FULLSTACK`,
+          message: `Ingeniero de Sistemas`,
           color: 'deep-purple-lighten-1',
         },
         {
-          icon: 'mdi-cellphone',
-          message: '+51 927594391',
-          color: 'green',
+          icon: 'mdi-briefcase-account',
+          message: `Hablo español e inglés técnico`,
+          color: 'deep-purple-lighten-1',
         },
         {
           icon: 'mdi-email',
