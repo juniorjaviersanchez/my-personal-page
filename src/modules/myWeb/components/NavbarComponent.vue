@@ -38,22 +38,22 @@
 
         <v-list density="compact" nav>
             <router-link class="is-active" :to="{name: 'home-my-web'}">
-                <v-list-item active-color="primary" prepend-icon="mdi-view-dashboard" title="Inicio" value="home-my-web"> </v-list-item>
+                <v-list-item :class="colorTextoNav" active-color="primary" prepend-icon="mdi-view-dashboard" title="Inicio" value="home-my-web"> </v-list-item>
             </router-link>
             <router-link class="is-active" :to="{name: 'know-me-my-web'}">
-                <v-list-item active-color="primary" prepend-icon="mdi-account-heart" title="Conóceme" value="know-me-my-web" />
+                <v-list-item :class="colorTextoNav" active-color="primary" prepend-icon="mdi-account-heart" title="Conóceme" value="know-me-my-web" />
             </router-link>
             <router-link class="is-active" :to="{name: 'service-my-web'}">
-                <v-list-item active-color="primary" prepend-icon="mdi-wrench" title="Servicios" value="service-my-web" />
+                <v-list-item :class="colorTextoNav" active-color="primary" prepend-icon="mdi-wrench" title="Servicios" value="service-my-web" />
             </router-link>
             <router-link class="is-active" :to="{name: 'portfolio-my-web'}">
-                <v-list-item active-color="primary" prepend-icon="mdi-briefcase-outline" title="Portafolio" value="portfolio-my-web" />
+                <v-list-item :class="colorTextoNav" active-color="primary" prepend-icon="mdi-briefcase-outline" title="Portafolio" value="portfolio-my-web" />
             </router-link>
             <router-link class="is-active" :to="{name: 'certificate-my-web'}">
-                <v-list-item active-color="primary" prepend-icon="mdi-certificate-outline" title="Certificados" value="certificate-my-web" />
+                <v-list-item :class="colorTextoNav" active-color="primary" prepend-icon="mdi-certificate-outline" title="Certificados" value="certificate-my-web" />
             </router-link>
             <router-link class="is-active" :to="{name: 'contact-my-web'}">
-                <v-list-item active-color="primary" prepend-icon="mdi-email-edit-outline" title="Contáctame" value="contact-my-web" />
+                <v-list-item :class="colorTextoNav" active-color="primary" prepend-icon="mdi-email-edit-outline" title="Contáctame" value="contact-my-web" />
             </router-link>
         </v-list>
     </v-navigation-drawer>
@@ -64,8 +64,9 @@ export default {
     data() {
             return {
                 drawer: null,
-                colorGenral: 'indigo-lighten-4',
-                colorGenralNav: 'white'
+                colorGenral: 'deep-purple-lighten-3',
+                colorGenralNav: 'white',
+                colorTextoNav: 'text-grey-lighten-2'
             }
     }
 }
