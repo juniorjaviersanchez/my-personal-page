@@ -6,9 +6,11 @@
         
         <v-spacer></v-spacer>
         <v-btn :elevation="4" icon="mdi-home-circle-outline" color="primary" :to="{name: 'home'}"> </v-btn>
-        <v-spacer></v-spacer>
-
-        <v-btn icon="mdi-whatsapp" color="success" href="https://wa.link/3qy8q1" target="_blank"> </v-btn>
+        
+        <!-- 
+            <v-spacer></v-spacer>
+        <v-btn icon="mdi-whatsapp" color="success" href="https://wa.link/3qy8q1" target="_blank"> </v-btn> 
+        -->
     </v-toolbar>
 
     <v-navigation-drawer

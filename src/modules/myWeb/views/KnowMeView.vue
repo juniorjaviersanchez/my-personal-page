@@ -190,6 +190,36 @@
                   </v-row>
                 </v-card-title>
 
+                <v-card-text class="text-center">
+                  <v-btn
+                        rounded="pill"
+                        color="primary"
+                        :to="{name: 'service-my-web'}"
+                        class="mt-1"
+                    >
+                      Ver servicios
+                        <v-icon icon="mdi-cursor-default-click-outline"></v-icon>
+                    </v-btn>
+                  <v-btn
+                        rounded="pill"
+                        color="primary"
+                        :to="{name: 'portfolio-my-web'}"
+                        class="mt-1 ml-1"
+                    >
+                      Ver portafolio
+                        <v-icon icon="mdi-cursor-default-click-outline"></v-icon>
+                    </v-btn>
+                  <v-btn
+                        rounded="pill"
+                        color="primary"
+                        :to="{name: 'certificate-my-web'}"
+                        class="mt-1"
+                    >
+                      Ver certificados
+                        <v-icon icon="mdi-cursor-default-click-outline"></v-icon>
+                    </v-btn>
+                </v-card-text>
+
               </v-card>
             </v-hover>
           </v-col>

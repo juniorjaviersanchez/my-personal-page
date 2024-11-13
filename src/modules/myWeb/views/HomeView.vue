@@ -10,7 +10,7 @@
             <v-col>
               <div class="margin-50">
                 <div class="text-h3 font-weight-bold">
-                  Soy Junior Javier Sánchez
+                  ¡Hola! Soy Javier Sánchez
                 </div>
                 <div class="animated-text text-h6"> 
                   {{ animatedText }}|<v-icon size="x-small" class="pb-1" icon="mdi-pencil-outline"></v-icon>
@@ -22,7 +22,7 @@
                     :to="{name: 'know-me-my-web'}"
                     class="mt-15"
                 >
-                    Más información
+                  Conoce mi trayectoria
                     <v-icon icon="mdi-cursor-default-click-outline"></v-icon>
                 </v-btn>
             </v-col>
@@ -37,7 +37,7 @@
 export default {
   data() {
     return {
-      words: ['DESARROLADOR WEB' , 'FRONTEND', 'BACKEND', 'FULLSTACK'],
+      words: ['DESARROLLADOR FULL STACK' , 'ESPECIALISTA DIGITAL', 'CÓDIGO EFICIENTE Y ESCALABLE', 'OPTIMIZACIÓN Y RENDIMIENTO'],
       animatedText: ""
     }
   },
@@ -59,7 +59,7 @@ export default {
         }
       }
 
-    }, 300);
+    }, 150);
   }
 }
 </script>

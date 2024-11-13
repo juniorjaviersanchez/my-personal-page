@@ -43,7 +43,7 @@
                       color="primary"
                       :to="{name: 'home-my-web'}"
                     >
-                      Ver página principal
+                      Página principal
                       <v-icon icon="mdi-cursor-default-click-outline"></v-icon>
                     </v-btn>
                   </div>
